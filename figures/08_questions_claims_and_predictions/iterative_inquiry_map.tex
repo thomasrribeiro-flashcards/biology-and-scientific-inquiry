@@ -1,0 +1,24 @@
+\def\pgfsysdriver{pgfsys-dvisvgm.def}
+% flashcards-title: Iterative map of scientific inquiry
+% flashcards-desc: Boxes for observations, questions, hypotheses, predictions, comparisons, and revision are connected by forward and return arrows.
+\documentclass[tikz,border=6pt]{standalone}
+\input{figures/tikz-style.tex}
+\begin{document}
+\begin{tikzpicture}[fc text, x=1cm, y=1cm]
+  \node[fc node] (o) at (1.6,3.7) {observations};
+  \node[fc node] (q) at (4.7,3.7) {questions};
+  \node[fc node] (h) at (7.8,3.7) {hypotheses};
+  \node[fc node] (p) at (10.9,3.7) {predictions};
+  \node[fc node] (c) at (10.9,1.3) {comparisons};
+  \node[fc node] (r) at (6.2,1.3) {revision};
+  \draw[fc arrow] (o)--(q);
+  \draw[fc arrow] (q)--(h);
+  \draw[fc arrow] (h)--(p);
+  \draw[fc arrow] (p)--(c);
+  \draw[fc arrow] (c)--(r);
+  \draw[fc arrow, draw=fcgreen, bend left=18] (r) to (h);
+  \draw[fc arrow, draw=fcgreen, bend left=22] (r) to (q);
+  \draw[fc arrow, draw=fcorange, bend right=22] (c) to (p);
+  \node[fc note] at (6.2,0.25) {inquiry can revisit earlier decisions};
+\end{tikzpicture}
+\end{document}

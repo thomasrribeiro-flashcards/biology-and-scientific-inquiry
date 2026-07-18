@@ -1,0 +1,38 @@
+\def\pgfsysdriver{pgfsys-dvisvgm.def}
+% flashcards-title: Three biological scales for studying plants
+% flashcards-desc: Panel A shows one simplified cell, Panel B one whole plant, and Panel C many plants of one kind in one area. The icons are conceptual; their drawn sizes are not comparable.
+\documentclass[tikz,border=6pt]{standalone}
+\input{figures/tikz-style.tex}
+\begin{document}
+\begin{tikzpicture}[fc text, x=1cm, y=1cm]
+  \foreach \x/\lab in {0/A,5.2/B,10.4/C} {
+    \node[fc panel, minimum width=46mm, minimum height=55mm, anchor=south west] at (\x,0.65) {};
+    \node[fc label, anchor=north west] at (\x+0.3,5.8) {Panel \lab};
+  }
+
+  \draw[draw=fcgreen, line width=1.2pt, fill=white, rounded corners=8pt]
+    (1.0,2.15) rectangle (3.6,4.35);
+  \node[fc note] at (2.3,1.35) {one cell};
+
+  \draw[draw=fcsoil, line width=1.1pt] (6.0,1.85) -- (8.9,1.85);
+  \draw[draw=fcgreen, line width=1.5pt] (7.45,1.85) -- (7.45,4.15);
+  \draw[draw=fcgreen, line width=1.1pt, fill=white] (7.45,3.55)
+    .. controls (6.55,3.3) and (6.45,3.95) .. (7.45,4.0);
+  \draw[draw=fcgreen, line width=1.1pt, fill=white] (7.45,3.15)
+    .. controls (8.35,2.9) and (8.45,3.55) .. (7.45,3.6);
+  \node[fc note] at (7.45,1.35) {one organism};
+
+  \draw[draw=fcsoil, line width=1.1pt] (10.95,1.85) -- (14.95,1.85);
+  \foreach \x/\h in {11.35/1.4,12.15/1.9,13.0/1.5,13.85/2.1,14.55/1.6} {
+    \draw[draw=fcgreen, line width=1.25pt] (\x,1.85) -- (\x,1.85+\h);
+    \draw[draw=fcgreen, line width=0.9pt, fill=white]
+      (\x,1.85+0.65*\h) .. controls (\x-0.42,1.85+0.5*\h) and
+      (\x-0.46,1.85+0.8*\h) .. (\x,1.85+0.84*\h);
+  }
+  \node[fc note, text width=40mm] at (12.95,1.18)
+    {many same-kind organisms\\in one area};
+
+  \node[fc note, text width=145mm, anchor=north] at (7.5,0.45)
+    {Conceptual icons; drawn sizes are not comparable.};
+\end{tikzpicture}
+\end{document}

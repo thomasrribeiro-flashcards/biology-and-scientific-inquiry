@@ -1,0 +1,21 @@
+\def\pgfsysdriver{pgfsys-dvisvgm.def}
+% flashcards-title: Observed association compared with intervention evidence
+% flashcards-desc: Panel A links observed shade and height with a two-headed line. Panel B uses a one-way assigned-shade arrow leading to later height comparison, with matched conditions noted.
+\documentclass[tikz,border=6pt]{standalone}
+\input{figures/tikz-style.tex}
+\begin{document}
+\begin{tikzpicture}[fc text, x=1cm, y=1cm]
+  \node[fc panel, minimum width=70mm, minimum height=50mm, anchor=south west] at (0,0) {};
+  \node[fc panel, minimum width=70mm, minimum height=50mm, anchor=south west] at (7.6,0) {};
+  \node[fc label] at (3.5,4.5) {Panel A: observation};
+  \node[fc node] (shadeA) at (2.1,2.6) {shade};
+  \node[fc node] (heightA) at (4.9,2.6) {height};
+  \draw[{Stealth[length=2.8mm,width=2mm]}-{Stealth[length=2.8mm,width=2mm]}, draw=fcgreen, line width=1.2pt] (shadeA)--(heightA);
+  \node[fc note] at (3.5,1.2) {observed together};
+  \node[fc label] at (11.1,4.5) {Panel B: intervention};
+  \node[fc node] (shadeB) at (9.6,2.7) {assigned\\shade};
+  \node[fc node] (heightB) at (12.8,2.7) {later height\\comparison};
+  \draw[fc arrow] (shadeB)--(heightB);
+  \node[fc note] at (11.1,1.15) {other shown conditions matched};
+\end{tikzpicture}
+\end{document}

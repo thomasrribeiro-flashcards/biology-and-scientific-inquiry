@@ -1,0 +1,18 @@
+\def\pgfsysdriver{pgfsys-dvisvgm.def}
+% flashcards-title: Qualitative matter budget for a growing organism
+% flashcards-desc: A thick arrow enters an organism boundary, a thin arrow leaves it, and an upward arrow labeled stored matter increases appears inside.
+\documentclass[tikz,border=6pt]{standalone}
+\input{figures/tikz-style.tex}
+\begin{document}
+\begin{tikzpicture}[fc text, x=1cm, y=1cm]
+  \node[fc panel, minimum width=140mm, minimum height=52mm, anchor=south west] at (0,0) {};
+  \node[fc boundary, minimum width=52mm, minimum height=34mm] (org) at (7.0,2.7) {};
+  \node[fc label] at (7.0,3.9) {organism system};
+  \draw[-{Stealth[length=3.2mm,width=2.4mm]}, draw=fcblue, line width=3pt, line cap=butt]
+    (0.9,2.7)--node[fc note, above] {matter input} (4.25,2.7);
+  \draw[-{Stealth[length=3.2mm,width=2.4mm]}, draw=fcorange, line width=1.2pt, line cap=butt]
+    (9.75,2.7)--node[fc note, above] {matter output} (13.0,2.7);
+  \draw[fc arrow, draw=fcgreen] (7.0,1.4)--node[fc note, right] {stored matter\\increases} (7.0,3.05);
+  \node[fc note] at (7.0,0.45) {arrow thickness shows only larger versus smaller};
+\end{tikzpicture}
+\end{document}

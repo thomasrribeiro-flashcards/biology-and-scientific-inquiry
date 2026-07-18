@@ -1,0 +1,23 @@
+\def\pgfsysdriver{pgfsys-dvisvgm.def}
+% flashcards-title: Matter cycle and one-way energy path
+% flashcards-desc: Solid green arrows loop among air, organism, and soil. Blue and orange arrows carry energy from light through the organism to heat leaving the system.
+\documentclass[tikz,border=6pt]{standalone}
+\input{figures/tikz-style.tex}
+\begin{document}
+\begin{tikzpicture}[fc text, x=1cm, y=1cm]
+  \node[fc panel, minimum width=155mm, minimum height=58mm, anchor=south west] at (0,0) {};
+  \node[fc node] (air) at (3.8,4.35) {air};
+  \node[fc node] (org) at (6.1,2.45) {organism};
+  \node[fc node] (soil) at (1.5,2.45) {soil};
+  \draw[fc arrow, draw=fcgreen] (air)--(org);
+  \draw[fc arrow, draw=fcgreen] (org)--(soil);
+  \draw[fc arrow, draw=fcgreen] (soil)--(air);
+  \node[fc label, text=fcgreen] at (3.8,0.55) {matter loop};
+  \node[fc node] (light) at (11.2,4.55) {light};
+  \node[fc node] (use) at (11.2,2.85) {organism};
+  \node[fc node] (heat) at (11.2,1.05) {heat to\\surroundings};
+  \draw[fc arrow] (light)--(use);
+  \draw[fc arrow, draw=fcorange] (use)--(heat);
+  \node[fc label, text=fcblue] at (14.0,2.85) {energy path};
+\end{tikzpicture}
+\end{document}

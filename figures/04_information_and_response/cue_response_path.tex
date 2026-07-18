@@ -1,0 +1,18 @@
+\def\pgfsysdriver{pgfsys-dvisvgm.def}
+% flashcards-title: Cue to response path with an interrupted link
+% flashcards-desc: Four labeled boxes run from cue through detector and internal relay to response. A black X interrupts the link between detector and relay.
+\documentclass[tikz,border=6pt]{standalone}
+\input{figures/tikz-style.tex}
+\begin{document}
+\begin{tikzpicture}[fc text, node distance=13mm]
+  \node[fc node] (cue) {cue};
+  \node[fc node, right=of cue] (det) {detector\\changes};
+  \node[fc node, right=of det] (relay) {internal\\relay};
+  \node[fc node, right=of relay] (resp) {response};
+  \draw[fc arrow] (cue)--(det);
+  \draw[fc arrow] (det)--(relay);
+  \draw[fc arrow] (relay)--(resp);
+  \node[fc label, text=fcorange, fill=white, inner sep=2pt] at ($(det)!0.5!(relay)$) {X};
+  \node[fc note, below=8mm of relay] {arrows mean ``affects the next step''};
+\end{tikzpicture}
+\end{document}

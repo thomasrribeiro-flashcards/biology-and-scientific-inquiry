@@ -1,0 +1,21 @@
+\def\pgfsysdriver{pgfsys-dvisvgm.def}
+% flashcards-title: Open and pinched tube paths
+% flashcards-desc: Water-flow arrows pass through an open hollow tube but stop at the narrow middle of a pinched tube.
+\documentclass[tikz,border=6pt]{standalone}
+\input{figures/tikz-style.tex}
+\begin{document}
+\begin{tikzpicture}[fc text, x=1cm, y=1cm]
+  \node[fc panel, minimum width=70mm, minimum height=45mm, anchor=south west] at (0,0) {};
+  \node[fc panel, minimum width=70mm, minimum height=45mm, anchor=south west] at (7.6,0) {};
+  \node[fc label] at (3.5,4.0) {open tube};
+  \node[fc label] at (11.1,4.0) {pinched tube};
+  \draw[draw=fcink, line width=1.5pt] (0.8,2.85)--(6.2,2.85) (0.8,1.45)--(6.2,1.45);
+  \draw[fc arrow] (1.1,2.15)--(5.85,2.15);
+  \draw[draw=fcink, line width=1.5pt]
+    (8.4,2.85)--(10.45,2.85)--(10.9,2.25)--(11.35,2.85)--(13.8,2.85)
+    (8.4,1.45)--(10.45,1.45)--(10.9,2.05)--(11.35,1.45)--(13.8,1.45);
+  \draw[fc arrow] (8.7,2.15)--(10.35,2.15);
+  \draw[fc arrow] (13.5,2.15)--(11.55,2.15);
+  \node[fc note] at (7.2,0.45) {arrows show attempted water flow};
+\end{tikzpicture}
+\end{document}

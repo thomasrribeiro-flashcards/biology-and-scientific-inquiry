@@ -1,0 +1,21 @@
+\usetikzlibrary{arrows.meta,calc,fit,positioning,shapes.geometric}
+
+\definecolor{fcink}{HTML}{17212B}
+\definecolor{fcblue}{HTML}{1D5D8C}
+\definecolor{fcgreen}{HTML}{2D6A4F}
+\definecolor{fcorange}{HTML}{A44A1F}
+\definecolor{fcpale}{HTML}{F4F7F9}
+\definecolor{fcsoil}{HTML}{8B5E3C}
+
+\tikzset{
+  fc text/.style={font=\sffamily, text=fcink},
+  fc panel/.style={draw=fcink, line width=0.9pt, rounded corners=5pt, fill=fcpale},
+  fc node/.style={draw=fcink, line width=0.9pt, rounded corners=4pt, fill=white,
+    minimum width=24mm, minimum height=10mm, align=center, font=\sffamily},
+  fc arrow/.style={-{Stealth[length=3.2mm,width=2.4mm]}, line width=1.2pt,
+    draw=fcblue, line cap=butt},
+  fc boundary/.style={draw=fcorange, line width=1.4pt, dash pattern=on 5pt off 3pt,
+    rounded corners=7pt},
+  fc label/.style={font=\sffamily\bfseries, text=fcink},
+  fc note/.style={font=\sffamily\small, text=fcink, align=center}
+}

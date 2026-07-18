@@ -1,0 +1,246 @@
+{
+  "generatedAt": "2026-07-18T19:01:36.617Z",
+  "root": "/private/var/folders/9g/ql78yybx14bfh50_d9338g6c0000gn/T/flashcards-isolated-hhg8uO/biology-and-scientific-inquiry",
+  "decks": [
+    {
+      "deck": "biology-and-scientific-inquiry",
+      "path": "/private/var/folders/9g/ql78yybx14bfh50_d9338g6c0000gn/T/flashcards-isolated-hhg8uO/biology-and-scientific-inquiry",
+      "files": [
+        {
+          "file": "01_living_systems_and_scale.md",
+          "counts": {
+            "basic": 18,
+            "cloze": 0,
+            "problem": 1
+          },
+          "parserWarnings": [],
+          "katexErrors": [],
+          "imageErrors": [],
+          "identityErrors": [],
+          "clozeLints": [],
+          "frontmatterLints": []
+        }
+      ],
+      "hashInventory": [
+        {
+          "file": "01_living_systems_and_scale.md",
+          "type": "basic",
+          "hash": "5f88297b52d2546450c5da1f987a4564fa4756574facae14a2ee56d010252844",
+          "contentHash": "5f88297b52d2546450c5da1f987a4564fa4756574facae14a2ee56d010252844",
+          "stableId": "1caf28c2-97a7-4751-b85d-c2f6a8e449a5",
+          "aliases": [],
+          "excerpt": "Biology is the study of life. An **organism** is one individual living thing; a "
+        },
+        {
+          "file": "01_living_systems_and_scale.md",
+          "type": "basic",
+          "hash": "7ba9d8fe704b437715302e8b2c94ad3dc66436080ef898d25e3db032c48b95c4",
+          "contentHash": "7ba9d8fe704b437715302e8b2c94ad3dc66436080ef898d25e3db032c48b95c4",
+          "stableId": "c2592739-d645-4ff9-abb4-6bdac2aae321",
+          "aliases": [],
+          "excerpt": "What does biology study?"
+        },
+        {
+          "file": "01_living_systems_and_scale.md",
+          "type": "basic",
+          "hash": "a21bfbb34fa0200ea644a5bbc60bd935483fedd07b4b377f1906ba97d5fecbe0",
+          "contentHash": "a21bfbb34fa0200ea644a5bbc60bd935483fedd07b4b377f1906ba97d5fecbe0",
+          "stableId": "288866f0-34b8-4576-814b-d711b789ac86",
+          "aliases": [],
+          "excerpt": "In systems reasoning, a **system** is a chosen set of parts, called **components"
+        },
+        {
+          "file": "01_living_systems_and_scale.md",
+          "type": "basic",
+          "hash": "6dfd5ed0789b84866838c5aff3d4d3234ed39ca0d0f6a3b77fecf6214d9b2f47",
+          "contentHash": "6dfd5ed0789b84866838c5aff3d4d3234ed39ca0d0f6a3b77fecf6214d9b2f47",
+          "stableId": "8e542a02-4865-489b-a824-2d8f7d26b097",
+          "aliases": [],
+          "excerpt": "A **system boundary** separates what a study includes from what it treats as out"
+        },
+        {
+          "file": "01_living_systems_and_scale.md",
+          "type": "basic",
+          "hash": "7f6ef2ea899cff2f7dbdcefd31c2f56690010c0f6ee4f90e45452b7a509b25b0",
+          "contentHash": "7f6ef2ea899cff2f7dbdcefd31c2f56690010c0f6ee4f90e45452b7a509b25b0",
+          "stableId": "4b0a6a0b-5761-4a0b-9464-2a87317e6e29",
+          "aliases": [],
+          "excerpt": "What makes a collection of things a useful system for a biological question?"
+        },
+        {
+          "file": "01_living_systems_and_scale.md",
+          "type": "basic",
+          "hash": "021081b8bb3cdf24993e87c82b1290cb9ce20a5e8bb12df99b0f47f2eb8ccc56",
+          "contentHash": "021081b8bb3cdf24993e87c82b1290cb9ce20a5e8bb12df99b0f47f2eb8ccc56",
+          "stableId": "4b4c8bb3-0526-4b8f-b541-57b2330e664b",
+          "aliases": [],
+          "excerpt": "In this diagram, each dashed outline is a candidate system boundary, and arrows "
+        },
+        {
+          "file": "01_living_systems_and_scale.md",
+          "type": "problem",
+          "hash": "f1a0692159cf684c5991b9b1d8b3aa29e0bf2e228989e260b574de1d726ddc1e",
+          "contentHash": "f1a0692159cf684c5991b9b1d8b3aa29e0bf2e228989e260b574de1d726ddc1e",
+          "stableId": "6c0dd58a-2a2f-4e08-9fce-dc44818b52c3",
+          "aliases": [],
+          "excerpt": "A researcher defines a system as a plant alone but asks how dry soil and nearby "
+        },
+        {
+          "file": "01_living_systems_and_scale.md",
+          "type": "basic",
+          "hash": "d50603f088b8e4f7ff451eeca09a944c1774414d205bf3989e36c783ac75bfce",
+          "contentHash": "d50603f088b8e4f7ff451eeca09a944c1774414d205bf3989e36c783ac75bfce",
+          "stableId": "57636c0b-c611-4585-b7c7-78e3039fe10f",
+          "aliases": [],
+          "excerpt": "Biologists choose a **scale**: the size or level at which they ask a question. A"
+        },
+        {
+          "file": "01_living_systems_and_scale.md",
+          "type": "basic",
+          "hash": "7b09d1cdabfce03129b95746925cd9c3608a6cb6e505267644a7d430c3ee99f8",
+          "contentHash": "7b09d1cdabfce03129b95746925cd9c3608a6cb6e505267644a7d430c3ee99f8",
+          "stableId": "dfdf9acb-6447-4404-947d-746d8e747bec",
+          "aliases": [],
+          "excerpt": "What is the decisive difference between an organism-scale question and a populat"
+        },
+        {
+          "file": "01_living_systems_and_scale.md",
+          "type": "basic",
+          "hash": "d68624deec45d8cd6d244ff9ba1dff09e3a59be134759e70d4c87dadb3046fe3",
+          "contentHash": "d68624deec45d8cd6d244ff9ba1dff09e3a59be134759e70d4c87dadb3046fe3",
+          "stableId": "4a2d9e2a-c4aa-4b07-9a25-bcae3a09dff3",
+          "aliases": [],
+          "excerpt": "The panels show three possible scales. The icons are conceptual; their drawn siz"
+        },
+        {
+          "file": "01_living_systems_and_scale.md",
+          "type": "basic",
+          "hash": "a6f4cf3412fa4fae875d31eed12cf376d7c4eb30c0adaf13f8115fef71ecdca7",
+          "contentHash": "a6f4cf3412fa4fae875d31eed12cf376d7c4eb30c0adaf13f8115fef71ecdca7",
+          "stableId": "0a59ee3a-396f-442f-8071-62227368b878",
+          "aliases": [],
+          "excerpt": "A young plant becomes taller. One explanation describes the whole plant's change"
+        },
+        {
+          "file": "01_living_systems_and_scale.md",
+          "type": "basic",
+          "hash": "78b08f4d6410e3501f7f74e5e1ddef5160bc676180a2f763daf115bac37dee1b",
+          "contentHash": "78b08f4d6410e3501f7f74e5e1ddef5160bc676180a2f763daf115bac37dee1b",
+          "stableId": "72b482da-be8f-4a33-8681-d97d51a970b7",
+          "aliases": [],
+          "excerpt": "In biology, **variation** means differences among organisms in a population. Thr"
+        },
+        {
+          "file": "01_living_systems_and_scale.md",
+          "type": "basic",
+          "hash": "3d583633fb36f61e82ad893834a15f7b3611048207ca4dd26d6cb81a52815a5d",
+          "contentHash": "3d583633fb36f61e82ad893834a15f7b3611048207ca4dd26d6cb81a52815a5d",
+          "stableId": "9bacbae3-f03c-4a8e-a2ea-22991c1d8707",
+          "aliases": [],
+          "excerpt": "Someone watches one snail move slowly for one minute and concludes, “All snails "
+        },
+        {
+          "file": "01_living_systems_and_scale.md",
+          "type": "basic",
+          "hash": "c197618f3e71f0b0a31ca821847bbe36035c988116e8fd70ceb576f8d6e8c508",
+          "contentHash": "c197618f3e71f0b0a31ca821847bbe36035c988116e8fd70ceb576f8d6e8c508",
+          "stableId": "34735e77-5c36-4e0b-bbfb-5a76aa257cdf",
+          "aliases": [],
+          "excerpt": "A **mechanism** is a process that produces an outcome. “The stem bends because i"
+        },
+        {
+          "file": "01_living_systems_and_scale.md",
+          "type": "basic",
+          "hash": "a903c4e0bab5c4364f540fccf2f8b794b8ef798bb1efc0cf4ac5afd1ce8d5e84",
+          "contentHash": "a903c4e0bab5c4364f540fccf2f8b794b8ef798bb1efc0cf4ac5afd1ce8d5e84",
+          "stableId": "de7bc10e-2a38-4a90-a9c8-9e573975a263",
+          "aliases": [],
+          "excerpt": "A young plant stem bends toward light from one side. Which is the mechanistic ex"
+        },
+        {
+          "file": "01_living_systems_and_scale.md",
+          "type": "basic",
+          "hash": "950f7f8c6fa91fc2499cc2d408e317ed11a971a26f37f212732d815070688cf6",
+          "contentHash": "950f7f8c6fa91fc2499cc2d408e317ed11a971a26f37f212732d815070688cf6",
+          "stableId": "3e2e962c-eb2f-41be-8f97-d66667670f12",
+          "aliases": [],
+          "excerpt": "An **observation** is something recorded, a **claim** is a statement about what "
+        },
+        {
+          "file": "01_living_systems_and_scale.md",
+          "type": "basic",
+          "hash": "f122d531ade9365665302dc152fba80a74c419c5051c003b04ce47e76f803db7",
+          "contentHash": "f122d531ade9365665302dc152fba80a74c419c5051c003b04ce47e76f803db7",
+          "stableId": "f68939a7-0271-43ef-a90f-7d534e01f076",
+          "aliases": [],
+          "excerpt": "Evidence from one plant shows that its leaves drooped after its soil dried. How "
+        },
+        {
+          "file": "01_living_systems_and_scale.md",
+          "type": "basic",
+          "hash": "6334c719825902eecd8226bda634bc78ab0a40139e222e4876aac561bee673f3",
+          "contentHash": "6334c719825902eecd8226bda634bc78ab0a40139e222e4876aac561bee673f3",
+          "stableId": "cd5fd20b-b91f-4954-8fb8-ab20c9677dd9",
+          "aliases": [],
+          "excerpt": "A **model** is a purposeful simplification used to represent or reason about som"
+        },
+        {
+          "file": "01_living_systems_and_scale.md",
+          "type": "basic",
+          "hash": "a7196d1d709c59a0d2fcc641761012ffd675ba2e89a6bf2e7f81bf82e1b85087",
+          "contentHash": "a7196d1d709c59a0d2fcc641761012ffd675ba2e89a6bf2e7f81bf82e1b85087",
+          "stableId": "a708434b-757d-4029-932d-a78aaa263b77",
+          "aliases": [],
+          "excerpt": "Two models address why a plant wilted in a hot, dry setting. Model X shows detai"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "decks": 1,
+    "files": 1,
+    "cards": 19,
+    "byType": {
+      "basic": 18,
+      "cloze": 0,
+      "problem": 1
+    },
+    "parserWarnings": 0,
+    "katexErrors": 0,
+    "imageErrors": 0,
+    "identityErrors": 0,
+    "clozeLints": 0,
+    "frontmatterLints": 0
+  },
+  "prerequisites": {
+    "valid": true,
+    "schemaVersion": 2,
+    "deck": "biology/biology-and-scientific-inquiry",
+    "deckDependencies": [],
+    "assumedTools": [],
+    "chapters": [
+      {
+        "id": "01_living_systems_and_scale",
+        "order": 1,
+        "mode": "explicit",
+        "prerequisites": [],
+        "provides": [
+          "biology",
+          "organism",
+          "living-system",
+          "system-boundary",
+          "biological-scale",
+          "cell",
+          "population",
+          "variation",
+          "mechanistic-explanation",
+          "evidence",
+          "model"
+        ],
+        "resolvedLocalDependencies": []
+      }
+    ],
+    "warnings": [],
+    "errors": []
+  }
+}

@@ -1,0 +1,26 @@
+schema_version = 2
+subject = "biology"
+deck = "biology-and-scientific-inquiry"
+level = "foundational"
+curriculum_order = 1
+status = "built"
+pilot_chapter = 1
+created = "2026-07-18"
+
+[prerequisites]
+decks = []
+assumed_tools = []
+
+[standards]
+flashcards_root = "/Users/thomasribeiro/code/flashcards"
+universal = "templates/guides/CARD_STANDARD.md"
+playbook = "templates/guides/AUTHORING_PLAYBOOK.md"
+subject = "templates/guides/biology.md"
+# If this reusable guide does not exist, the CLI loads ../DOMAIN_GUIDE.md.
+
+[identity]
+policy = "preserve-id-for-same-retrieval-target"
+
+[sources]
+require_authority = true
+require_license_record = true

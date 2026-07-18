@@ -1,0 +1,21 @@
+\def\pgfsysdriver{pgfsys-dvisvgm.def}
+% flashcards-title: Spread and compact arrangements of the same material
+% flashcards-desc: A broad thin sheet and a compact rolled form are shown with identical material marks and separate text labels.
+\documentclass[tikz,border=6pt]{standalone}
+\input{figures/tikz-style.tex}
+\begin{document}
+\begin{tikzpicture}[fc text, x=1cm, y=1cm]
+  \node[fc panel, minimum width=70mm, minimum height=48mm, anchor=south west] at (0,0) {};
+  \node[fc panel, minimum width=70mm, minimum height=48mm, anchor=south west] at (7.6,0) {};
+  \node[fc label] at (3.5,4.35) {broad sheet};
+  \node[fc label] at (11.1,4.35) {compact roll};
+  \draw[draw=fcgreen, fill=fcgreen!12, line width=1.4pt, rounded corners=3pt]
+    (0.8,1.2) rectangle (6.2,3.25);
+  \foreach \x in {1.35,2.2,3.05,3.9,4.75,5.6} {\draw[draw=fcgreen, line width=1pt] (\x,1.45)--(\x,3.0);}
+  \draw[draw=fcgreen, fill=fcgreen!12, line width=1.4pt]
+    (9.15,1.15) .. controls (12.7,1.15) and (12.7,3.25) .. (9.15,3.25)
+    .. controls (8.2,2.75) and (8.2,1.65) .. cycle;
+  \foreach \x in {9.1,9.7,10.3,10.9,11.5} {\draw[draw=fcgreen, line width=1pt] (\x,1.45)--(\x+0.8,2.95);}
+  \node[fc note] at (7.2,0.45) {same amount and kind of material};
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,17 @@
+\def\pgfsysdriver{pgfsys-dvisvgm.def}
+% flashcards-title: Simplified natural selection chain
+% flashcards-desc: Four labeled boxes show inherited variation, environment-linked outcome differences, unequal reproductive contribution, and population change across generations.
+\documentclass[tikz,border=6pt]{standalone}
+\input{figures/tikz-style.tex}
+\begin{document}
+\begin{tikzpicture}[fc text, node distance=10mm]
+  \node[fc node, text width=27mm] (v) {inherited\\variation};
+  \node[fc node, text width=33mm, right=of v] (e) {environment-linked\\outcome difference};
+  \node[fc node, text width=32mm, right=of e] (r) {unequal reproductive\\contribution};
+  \node[fc node, text width=30mm, right=of r] (p) {population change\\across generations};
+  \draw[fc arrow] (v)--(e);
+  \draw[fc arrow] (e)--(r);
+  \draw[fc arrow] (r)--(p);
+  \node[fc note, below=8mm of r] {arrows mean ``contributes to the next step''};
+\end{tikzpicture}
+\end{document}

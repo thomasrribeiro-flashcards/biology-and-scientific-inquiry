@@ -1,0 +1,24 @@
+\def\pgfsysdriver{pgfsys-dvisvgm.def}
+% flashcards-title: Three roles of biological information
+% flashcards-desc: Panel A shows a pattern held over time, Panel B a change moving between components, and Panel C a cue changing a detector.
+\documentclass[tikz,border=6pt]{standalone}
+\input{figures/tikz-style.tex}
+\begin{document}
+\begin{tikzpicture}[fc text, x=1cm, y=1cm]
+  \foreach \x/\lab in {0/A,5.2/B,10.4/C} {
+    \node[fc panel, minimum width=46mm, minimum height=48mm, anchor=south west] at (\x,0) {};
+    \node[fc label] at (\x+2.3,4.3) {Panel \lab};
+  }
+  \node[fc node] at (2.3,2.45) {pattern\\held over time};
+  \node[fc node, minimum width=15mm] (b1) at (6.4,2.45) {1};
+  \node[fc node, minimum width=15mm] (b2) at (8.8,2.45) {2};
+  \draw[fc arrow] (b1)--(b2);
+  \node[fc note] at (7.6,1.15) {change passes};
+  \node[fc node, minimum width=15mm] (c1) at (11.5,2.45) {cue};
+  \node[fc node, minimum width=20mm, draw=fcgreen] (c2) at (13.9,2.45) {detector\\changes};
+  \draw[fc arrow] (c1)--(c2);
+  \node[fc note] at (2.3,0.45) {stored};
+  \node[fc note] at (7.6,0.45) {transmitted};
+  \node[fc note] at (12.7,0.45) {detected};
+\end{tikzpicture}
+\end{document}

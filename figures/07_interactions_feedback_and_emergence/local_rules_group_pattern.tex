@@ -1,0 +1,20 @@
+\def\pgfsysdriver{pgfsys-dvisvgm.def}
+% flashcards-title: Local interaction rules producing a group pattern
+% flashcards-desc: In the first panel organism dots have scattered movement arrows. In the later panel they are close together with aligned arrows.
+\documentclass[tikz,border=6pt]{standalone}
+\input{figures/tikz-style.tex}
+\begin{document}
+\begin{tikzpicture}[fc text, x=1cm, y=1cm]
+  \node[fc panel, minimum width=70mm, minimum height=50mm, anchor=south west] at (0,0) {};
+  \node[fc panel, minimum width=70mm, minimum height=50mm, anchor=south west] at (7.6,0) {};
+  \node[fc label] at (3.5,4.5) {initial positions};
+  \node[fc label] at (11.1,4.5) {later group pattern};
+  \foreach \x/\y/\dx/\dy in {1.1/1.4/.5/.2,2.1/3.1/-.2/.5,3.4/1.8/.2/-.5,4.6/3.5/-.5/-.1,5.7/1.2/.1/.5} {
+    \fill[fcgreen] (\x,\y) circle (2.2mm); \draw[fc arrow] (\x,\y)--+(\dx,\dy);
+  }
+  \foreach \x/\y in {9.3/2.1,10.2/2.8,11.1/1.8,11.8/2.7,12.7/2.0} {
+    \fill[fcgreen] (\x,\y) circle (2.2mm); \draw[fc arrow] (\x,\y)--+(.65,.22);
+  }
+  \node[fc note] at (7.2,0.35) {dots = organisms \quad arrows = movement direction};
+\end{tikzpicture}
+\end{document}

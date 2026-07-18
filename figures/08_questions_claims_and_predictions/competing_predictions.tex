@@ -1,0 +1,17 @@
+\def\pgfsysdriver{pgfsys-dvisvgm.def}
+% flashcards-title: Competing hypotheses and predictions after watering
+% flashcards-desc: A table compares a low-water hypothesis predicting recovery after watering with a heat-only hypothesis predicting continued drooping while heat remains high.
+\documentclass[tikz,border=6pt]{standalone}
+\input{figures/tikz-style.tex}
+\begin{document}
+\begin{tikzpicture}[fc text, x=1cm, y=1cm]
+  \node[fc panel, minimum width=145mm, minimum height=50mm, anchor=south west] at (0,0) {};
+  \node[fc label] at (3.3,4.35) {hypothesis};
+  \node[fc label] at (10.0,4.35) {prediction after watering while heat remains};
+  \draw[draw=fcink, line width=.8pt] (0.5,3.75)--(14.0,3.75) (0.5,2.25)--(14.0,2.25) (5.6,.6)--(5.6,4.65);
+  \node[fc note, text width=43mm] at (3.0,3.0) {low water causes drooping};
+  \node[fc note, text width=70mm] at (9.8,3.0) {leaves recover promptly};
+  \node[fc note, text width=43mm] at (3.0,1.45) {heat alone causes drooping};
+  \node[fc note, text width=70mm] at (9.8,1.45) {leaves remain drooped while heat remains};
+\end{tikzpicture}
+\end{document}

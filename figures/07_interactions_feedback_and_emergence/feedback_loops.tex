@@ -1,0 +1,24 @@
+\def\pgfsysdriver{pgfsys-dvisvgm.def}
+% flashcards-title: Reinforcing and counteracting feedback loops
+% flashcards-desc: Two three-component loops use text labels on arrows. Panel A has three increase links. Panel B has two increase links and one decrease link; no feedback category is named.
+\documentclass[tikz,border=6pt]{standalone}
+\input{figures/tikz-style.tex}
+\begin{document}
+\begin{tikzpicture}[fc text, x=1cm, y=1cm]
+  \node[fc panel, minimum width=73mm, minimum height=58mm, anchor=south west] at (0,0) {};
+  \node[fc panel, minimum width=73mm, minimum height=58mm, anchor=south west] at (8.0,0) {};
+  \node[fc label] at (3.65,5.25) {Panel A};
+  \node[fc label] at (11.65,5.25) {Panel B};
+  \foreach \o in {0,8} {
+    \node[fc node, minimum width=16mm] (a\o) at (\o+3.65,4.0) {A};
+    \node[fc node, minimum width=16mm] (b\o) at (\o+1.65,1.65) {B};
+    \node[fc node, minimum width=16mm] (c\o) at (\o+5.65,1.65) {C};
+    \draw[fc arrow] (a\o)--node[fc note, above left] {increases} (b\o);
+    \draw[fc arrow] (b\o)--node[fc note, below] {increases} (c\o);
+  }
+  \draw[fc arrow] (c0)--node[fc note, above right] {increases} (a0);
+  \draw[fc arrow, draw=fcorange] (c8)--node[fc note, above right] {decreases} (a8);
+  \node[fc note] at (3.65,0.35) {three increase links};
+  \node[fc note] at (11.65,0.35) {two increase + one decrease};
+\end{tikzpicture}
+\end{document}
