@@ -3,12 +3,13 @@ subject = "biology"
 deck = "biology-and-scientific-inquiry"
 level = "foundational"
 curriculum_order = 1
-status = "built"
+status = "pilot-built"
 pilot_chapter = 1
 created = "2026-07-18"
 
 [prerequisites]
 decks = []
+recommended_decks = []
 assumed_tools = []
 
 [standards]

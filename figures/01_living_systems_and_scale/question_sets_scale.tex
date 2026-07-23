@@ -1,38 +1,52 @@
-\def\pgfsysdriver{pgfsys-dvisvgm.def}
-% flashcards-title: Three biological scales for studying plants
-% flashcards-desc: Panel A shows one simplified cell, Panel B one whole plant, and Panel C many plants of one kind in one area. The icons are conceptual; their drawn sizes are not comparable.
-\documentclass[tikz,border=6pt]{standalone}
+% flashcards-title: Three panels showing three biological scales
+% flashcards-desc: Panel 1 shows one rounded building unit with small specks inside it. Panel 2 shows one whole small creature. Panel 3 shows several creatures of the same kind together on a ground line. A note states the drawn sizes are symbols only and not to scale.
+\documentclass[tikz,border=4pt]{standalone}
 \input{figures/tikz-style.tex}
 \begin{document}
-\begin{tikzpicture}[fc text, x=1cm, y=1cm]
-  \foreach \x/\lab in {0/A,5.2/B,10.4/C} {
-    \node[fc panel, minimum width=46mm, minimum height=55mm, anchor=south west] at (\x,0.65) {};
-    \node[fc label, anchor=north west] at (\x+0.3,5.8) {Panel \lab};
+\begin{tikzpicture}[fc text]
+
+  \newcommand{\fcbug}[3]{% x, y, scale
+    \begin{scope}[shift={(#1,#2)}, scale=#3, draw=fcgreen]
+      \draw[line width=0.9pt, fill=fcgreen!30] (0,0) ellipse (0.5 and 0.32);
+      \draw[line width=0.9pt, fill=fcgreen!45] (0.55,0) circle (0.15);
+      \draw[line width=0.7pt] (0.67,0.10) -- (0.86,0.26);
+      \draw[line width=0.7pt] (0.67,-0.10) -- (0.86,-0.26);
+      \foreach \lx in {-0.28,0,0.28} {
+        \draw[line width=0.7pt] (\lx,0.30) -- (\lx-0.05,0.52);
+        \draw[line width=0.7pt] (\lx,-0.30) -- (\lx-0.05,-0.52);
+      }
+    \end{scope}
   }
 
-  \draw[draw=fcgreen, line width=1.2pt, fill=white, rounded corners=8pt]
-    (1.0,2.15) rectangle (3.6,4.35);
-  \node[fc note] at (2.3,1.35) {one cell};
-
-  \draw[draw=fcsoil, line width=1.1pt] (6.0,1.85) -- (8.9,1.85);
-  \draw[draw=fcgreen, line width=1.5pt] (7.45,1.85) -- (7.45,4.15);
-  \draw[draw=fcgreen, line width=1.1pt, fill=white] (7.45,3.55)
-    .. controls (6.55,3.3) and (6.45,3.95) .. (7.45,4.0);
-  \draw[draw=fcgreen, line width=1.1pt, fill=white] (7.45,3.15)
-    .. controls (8.35,2.9) and (8.45,3.55) .. (7.45,3.6);
-  \node[fc note] at (7.45,1.35) {one organism};
-
-  \draw[draw=fcsoil, line width=1.1pt] (10.95,1.85) -- (14.95,1.85);
-  \foreach \x/\h in {11.35/1.4,12.15/1.9,13.0/1.5,13.85/2.1,14.55/1.6} {
-    \draw[draw=fcgreen, line width=1.25pt] (\x,1.85) -- (\x,1.85+\h);
-    \draw[draw=fcgreen, line width=0.9pt, fill=white]
-      (\x,1.85+0.65*\h) .. controls (\x-0.42,1.85+0.5*\h) and
-      (\x-0.46,1.85+0.8*\h) .. (\x,1.85+0.84*\h);
+  % ---------- Panel 1: one building unit ----------
+  \draw[fc panel] (0,0) rectangle (3.4,3.4);
+  \node[fc label] at (0.45,3.05) {1};
+  \draw[fcink, line width=1pt, fill=white] (1.7,1.55) ellipse (0.95 and 0.72);
+  \foreach \p in {(1.35,1.7),(1.95,1.85),(1.6,1.25),(2.05,1.35),(1.75,1.55)} {
+    \fill[fcblue] \p circle (0.09);
   }
-  \node[fc note, text width=40mm] at (12.95,1.18)
-    {many same-kind organisms\\in one area};
+  \node[fc note] at (1.7,0.45) {one building\\unit};
 
-  \node[fc note, text width=145mm, anchor=north] at (7.5,0.45)
-    {Conceptual icons; drawn sizes are not comparable.};
+  % ---------- Panel 2: one whole living thing ----------
+  \draw[fc panel] (3.8,0) rectangle (7.2,3.4);
+  \node[fc label] at (4.25,3.05) {2};
+  \fcbug{5.5}{1.7}{1.0}
+  \node[fc note] at (5.5,0.45) {one whole\\living thing};
+
+  % ---------- Panel 3: many of the same kind ----------
+  \draw[fc panel] (7.6,0) rectangle (11.0,3.4);
+  \node[fc label] at (8.05,3.05) {3};
+  \draw[fcsoil, line width=1pt] (7.95,0.95) -- (10.65,0.95);
+  \fcbug{8.7}{1.5}{0.5}
+  \fcbug{9.7}{1.9}{0.5}
+  \fcbug{10.2}{1.35}{0.5}
+  \fcbug{8.5}{2.35}{0.5}
+  \fcbug{9.35}{1.25}{0.5}
+  \node[fc note] at (9.3,0.45) {many of the\\same kind};
+
+  % ---------- scale caveat ----------
+  \node[fc note, text=fcorange] at (5.5,-0.55)
+    {Drawn sizes are symbols only and are not to scale.};
+
 \end{tikzpicture}
 \end{document}

@@ -1,32 +1,41 @@
-\def\pgfsysdriver{pgfsys-dvisvgm.def}
-% flashcards-title: Two candidate boundaries around a plant system
-% flashcards-desc: Two panels contain the same plant, soil, and air components. Candidate A encloses only the plant; Candidate B encloses the plant, soil, and nearby air. Arrows show possible effects.
-\documentclass[tikz,border=6pt]{standalone}
+% flashcards-title: Two candidate system boundaries around a potted plant
+% flashcards-desc: A potted plant sits in soil with surrounding air. A small dashed outline labeled A encloses only the plant. A larger dashed outline labeled B encloses the plant, the soil, and nearby air. Arrows link soil to plant and air to plant to show interactions.
+\documentclass[tikz,border=4pt]{standalone}
 \input{figures/tikz-style.tex}
 \begin{document}
-\begin{tikzpicture}[fc text, x=1cm, y=1cm]
-  \node[fc panel, minimum width=72mm, minimum height=58mm, anchor=south west] (pa) at (0,0) {};
-  \node[fc panel, minimum width=72mm, minimum height=58mm, anchor=south west] (pb) at (8.0,0) {};
+\begin{tikzpicture}[fc text]
 
-  \node[fc label, anchor=north west] at (0.35,5.45) {Candidate A};
-  \node[fc label, anchor=north west] at (8.35,5.45) {Candidate B};
+  % --- components ---
+  % pot with soil
+  \fill[fcsoil] (2.1,0.55) -- (3.9,0.55) -- (3.65,1.55) -- (2.35,1.55) -- cycle;
+  \draw[fcink, line width=0.9pt] (2.1,0.55) -- (3.9,0.55) -- (3.65,1.55) -- (2.35,1.55) -- cycle;
+  \node[fc note, text=white] at (3.0,1.05) {soil};
 
-  \node[fc node, draw=fcgreen, line width=1.2pt] (plantA) at (3.6,3.65) {plant};
-  \node[fc node, draw=fcsoil] (soilA) at (2.05,1.45) {soil};
-  \node[fc node, draw=fcblue] (airA) at (5.15,1.45) {nearby air};
-  \draw[fc arrow] (soilA.north east) -- node[fc note, above left=1pt] {water} (plantA.south west);
-  \draw[fc arrow] (airA.north west) -- node[fc note, above right=1pt] {heat} (plantA.south east);
+  % plant: stem and two leaves
+  \draw[fcgreen, line width=1.6pt] (3.0,1.55) -- (3.0,3.6);
+  \draw[fcgreen, line width=1.3pt, fill=fcgreen!25, rotate around={35:(2.62,3.12)}]
+      (2.62,3.12) ellipse (0.42 and 0.19);
+  \draw[fcgreen, line width=1.3pt, fill=fcgreen!25, rotate around={-35:(3.38,2.82)}]
+      (3.38,2.82) ellipse (0.42 and 0.19);
+  \node[fc label, text=fcgreen] at (4.7,3.0) {plant};
 
-  \node[fc node, draw=fcgreen, line width=1.2pt] (plantB) at (11.6,3.65) {plant};
-  \node[fc node, draw=fcsoil] (soilB) at (10.05,1.45) {soil};
-  \node[fc node, draw=fcblue] (airB) at (13.15,1.45) {nearby air};
-  \draw[fc arrow] (soilB.north east) -- node[fc note, above left=1pt] {water} (plantB.south west);
-  \draw[fc arrow] (airB.north west) -- node[fc note, above right=1pt] {heat} (plantB.south east);
+  % air region marker
+  \node[fc note] at (1.15,3.7) {air};
+  \node[circle, draw=fcblue, line width=0.7pt, minimum size=3mm] at (1.5,3.2) {};
+  \node[circle, draw=fcblue, line width=0.7pt, minimum size=2mm] at (0.95,2.9) {};
+  \node[circle, draw=fcblue, line width=0.7pt, minimum size=2.5mm] at (1.7,4.15) {};
 
-  \node[fc boundary, fit=(plantA), inner sep=6pt] {};
-  \node[fc boundary, fit=(plantB)(soilB)(airB), inner sep=7pt] {};
+  % --- interaction arrows (generic: one component affecting another) ---
+  \draw[fc arrow] (2.15,2.6) -- (1.25,2.9); % plant <-> air region
+  \draw[fc arrow] (3.0,1.75) -- (3.0,1.05);  % soil <-> plant (into soil)
 
-  \node[fc note, anchor=south] at (3.6,0.18) {dashed outline = chosen boundary};
-  \node[fc note, anchor=south] at (11.6,0.18) {dashed outline = chosen boundary};
+  % --- candidate boundary A: plant only ---
+  \draw[fc boundary] (2.05,1.9) rectangle (3.95,3.95);
+  \node[fc label, text=fcorange] at (3.0,4.2) {boundary A};
+
+  % --- candidate boundary B: plant + soil + air ---
+  \draw[fc boundary] (0.35,0.2) rectangle (5.7,4.95);
+  \node[fc label, text=fcorange, fill=fcpale, inner sep=1.5pt] at (4.55,0.5) {boundary B};
+
 \end{tikzpicture}
 \end{document}

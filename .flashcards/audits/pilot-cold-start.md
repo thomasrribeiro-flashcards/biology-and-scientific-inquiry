@@ -3,7 +3,7 @@
 cold_start_status: pass
 unresolved_dependencies: 0
 
-Audit date: 2026-07-18
+Audit date: 2026-07-22
 Chapter: `flashcards/01_living_systems_and_scale.md`
 Learner contract: cold-start adult; no confirmed biology, mathematics,
 chemistry, laboratory, field, or programming knowledge.
@@ -38,7 +38,7 @@ blocks, and figures outside scheduled fronts were not counted as instruction.
 | C08 | Select organism scale | scale, cell, organism, population | Front defines scale and all three biological levels before asking for a supported choice | pass |
 | C09 | Discriminate organism and population scales | organism scale, population scale | Established C08 | pass |
 | C10 | Translate a question to a pictured scale | panel grammar; cell/organism/population; conceptual icons; non-scale drawing | Scale terms established C08–C09; front and alt text identify panels and warn that icon sizes are not comparable | pass |
-| C11 | Relate explanations across scales | organism, cell, scale; increase in number or size | Terms established C08–C10; everyday comparison language is sufficient | pass |
+| C11 | Relate an organism-scale and a population-scale statement about one pond | organism scale, population scale; everyday duck/pond/spread language | Both scale terms established C08–C10; the front labels its two notes explicitly as organism-scale and population-scale, so no unstated mechanism is required | pass |
 | C12 | Use variation to limit representation | variation, population, organism | Population established C08; variation is defined on the front before the inference | pass |
 | C13 | Diagnose overgeneralization | organism; variation; brief observation | Organism established C01/C08; variation established C12; the front uses everyday “watches” and “concludes” rather than assuming evidence vocabulary | pass |
 | C14 | Turn need language into a mechanism question | mechanism; plant stem; process/outcome | Mechanism is defined on the front; plant stem and bending use familiar language | pass |
@@ -52,8 +52,8 @@ blocks, and figures outside scheduled fronts were not counted as instruction.
 
 - C07 introduces IPEE solution headings only on the back; no later front requires
   that procedure.
-- C11 introduces `complementary explanations` in feedback, but later fronts do
-  not assume the phrase.
+- C11's answer only states that a group is made up of individuals; it introduces
+  no term that a later front assumes.
 - No answer introduces a symbol, unit, axis, visual convention, method, or
   biological term that a later front silently assumes.
 
@@ -81,6 +81,13 @@ blocks, and figures outside scheduled fronts were not counted as instruction.
    not meant to be compared.
 4. Defined `wilt` on C06 before it reappears on C19.
 5. Simplified the cell icon so it cannot be mistaken for several cells.
+6. Rebuilt C11's cross-scale example around one duck pond (a single duck's
+   paddling versus the flock's north/south distribution) instead of a
+   cell-to-organism "growth" contrast. The earlier version implied a growth
+   mechanism (cells dividing or lengthening) that this chapter never introduces
+   and that the biology domain guide warns against asserting prematurely; the
+   pond example makes the same organism-versus-population point using only scale
+   terms already established on C08–C10.
 
 ## Gate decision
 

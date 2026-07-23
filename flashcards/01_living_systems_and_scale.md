@@ -1,6 +1,7 @@
 +++
 order = 1
 subject = "biology"
+authoring_model = "claude-opus-4-8"
 tags = ["biology", "scientific-inquiry", "systems-thinking", "scale"]
 prerequisites = []
 provides = [
@@ -20,96 +21,219 @@ provides = [
 
 # Living systems, boundaries, and scale
 
-<!-- card-id: 1caf28c2-97a7-4751-b85d-c2f6a8e449a5 -->
-Q: Biology is the study of life. An **organism** is one individual living thing; a dog, a houseplant, and one mushroom are examples. In this context, what does *organism* mean?
-A: **One individual living thing.**
+This chapter needs no earlier biology. Every technical word it uses is defined
+on the card that first needs it, then reused. Everyday English is assumed.
 
-<!-- card-id: c2592739-d645-4ff9-abb4-6bdac2aae321 -->
-Q: What does biology study?
-A: **Life and living systems.** Biology asks how living things work, interact, and change.
+## What biology studies
 
-<!-- card-id: 288866f0-34b8-4576-814b-d711b789ac86 -->
-Q: In systems reasoning, a **system** is a chosen set of parts, called **components**, and the ways those parts affect one another, called **interactions**. If dry soil changes a plant's condition, what kind of relationship connects the soil and plant?
-A: **An interaction.** One component—the soil—affects another component—the plant.
+<!-- card-id: fad00c6a-daf6-4a2d-886e-d4fd368906c1 -->
+Q: Biology is the study of living things. A single living thing — such as one
+dog, one tree, or one mushroom — is called an **organism**. Which one of these
+is an organism, and which two are not: a single ant, a rain puddle, a smooth
+pebble?
+A: The single ant is an organism, because it is one living thing. A rain puddle
+and a smooth pebble are not living things, so they are not organisms.
 
-<!-- card-id: 8e542a02-4865-489b-a824-2d8f7d26b097 -->
-Q: A **system boundary** separates what a study includes from what it treats as outside. What decision does the boundary record?
-A: **Which parts and interactions are inside the system being studied, and which are outside.**
+<!-- card-id: 3b24358a-8cf5-4947-8199-52a1123fb804 -->
+Q: A researcher studies how a kind of fish, a kind of moss, and the tiny living
+things floating in pond water all stay alive and change over time. Is this work
+part of biology? Explain using what biology studies.
+A: Yes. Biology is the study of living things, and fish, moss, and the tiny
+living things in pond water are all living things — biology is not limited to
+animals or to any single kind of organism.
 
-<!-- card-id: 4b0a6a0b-5761-4a0b-9464-2a87317e6e29 -->
-Q: What makes a collection of things a useful system for a biological question?
-A: **It identifies relevant components, their interactions, and a boundary.** The useful choices depend on the question.
+## Systems: components, interactions, and boundaries
 
-<!-- card-id: 4b4c8bb3-0526-4b8f-b541-57b2330e664b -->
-Q: In this diagram, each dashed outline is a candidate system boundary, and arrows show possible effects between components.
+<!-- card-id: 60779e9c-6b10-43df-92b4-a44f314a62d8 -->
+Q: A **system** is a set of parts you choose to study together. Each part is a
+**component**, and an **interaction** is one component affecting another.
+Suppose you study a bird resting on a thin branch, and the branch bends under
+the bird's weight. Name the components and name the interaction.
+A: Components: the bird and the branch. Interaction: the bird's weight bending
+the branch — that is one component (the bird) affecting another component (the
+branch).
 
-![Two candidate boundaries around the same plant, soil, and nearby air components.](../figures/01_living_systems_and_scale/study_boundary.svg)
+<!-- card-id: 3d65f63a-15b4-4ae2-964c-8c908da67270 -->
+Q: When you study a system, its **boundary** is the line you draw to decide what
+counts as inside your study and what is left outside. You choose to study the
+bird and the branch it sits on, drawing the boundary around just those two. Is
+the tree's deep underground part inside or outside this system, and what does
+that mean for your study?
+A: Outside. The boundary was drawn around only the bird and the branch, so the
+underground part is treated as outside — it is not one of the components this
+study is tracking.
 
-A plant **wilts**—loses firmness and droops—during hot, dry conditions. Which candidate boundary is more useful for asking how soil and nearby air contribute, and why?
-A: **Candidate B.** It includes the plant, soil, nearby air, and their possible interactions; Candidate A treats soil and air as outside.
+<!-- card-id: 1340c5af-3d1b-4a35-b245-5b0561e0e801 -->
+Q: To describe a system clearly you give three things: its components, the
+interactions among them, and its boundary. Two people look at the very same
+bird-on-a-branch scene yet end up describing different systems. How is that
+possible?
+A: Because a system is a chosen description, not a fixed object. Depending on the
+question each person asks, they can include different components, focus on
+different interactions, or draw the boundary in a different place — so the same
+scene yields different systems.
 
-<!-- card-id: 6c0dd58a-2a2f-4e08-9fce-dc44818b52c3 -->
-P: A researcher defines a system as a plant alone but asks how dry soil and nearby air affect that plant. How should the system boundary be revised?
-S: **IDENTIFY:** The boundary excludes two components named in the question.
+<!-- card-id: 9f523788-08b0-4d52-b654-95de18897c4b -->
+Q: In the diagram, each dashed outline is a **candidate boundary** — a possible
+choice of what to include in a system — and each arrow marks one component
+affecting another. To **wilt** means to lose firmness and droop. You want to
+study whether the soil and the surrounding air are involved when a potted plant
+wilts. Boundary A encloses only the plant; boundary B encloses the plant, the
+soil, and the air. Which candidate boundary fits this question, and why?
 
-**PLAN:** Include every component whose interaction the question asks about.
+![Two dashed candidate boundaries drawn over a potted plant, its soil, and the surrounding air; a small boundary labeled A and a larger boundary labeled B, with arrows between components.](../figures/01_living_systems_and_scale/study_boundary.svg)
+A: Boundary B. The question asks about the soil and the air, so both must be
+inside the boundary to be part of the study. Boundary A encloses only the plant
+and would leave the soil and air outside, where this system is not tracking
+them.
 
-**EXECUTE:** Expand the boundary to include the plant, soil, and nearby air.
+<!-- card-id: a52ca508-c46d-4eb3-9324-bd14e69c487c -->
+P: You want to study how a house cat and the ball of yarn it bats around
+interact. You first draw the system boundary around only the cat, leaving the
+yarn outside. Explain why this boundary does not fit your question, then state a
+boundary that does.
+S:
+IDENTIFY: This is a choice of system boundary. The boundary must enclose the
+components whose interaction the question is about.
+PLAN: Check whether both components named in the question — the cat and the yarn
+— are inside the boundary. If one is outside, the interaction crosses the
+boundary and the system cannot represent it. If so, redraw to include both.
+EXECUTE: The question is about the cat-and-yarn interaction, but the first
+boundary encloses only the cat and leaves the yarn outside. The batting
+interaction runs between a component inside and one outside, so it crosses the
+boundary and cannot be studied within this system. Redraw the boundary so it
+encloses both the cat and the yarn.
+EVALUATE: Test the new boundary against the question: with both the cat and the
+yarn inside, their interaction is now internal to the system, so the boundary
+matches what the question asks. The fix is appropriate.
 
-**EVALUATE:** The revised system now contains every named possible contributor and the interactions among them. Including them makes the question representable; it does not establish that either one caused the change.
+## Scale: the level a question is about
 
-<!-- card-id: 57636c0b-c611-4585-b7c7-78e3039fe10f -->
-Q: Biologists choose a **scale**: the size or level at which they ask a question. A **cell** is the smallest basic unit of life; an **organism** is one individual living thing; a **population** is a group of organisms of the same kind in the same area. A question about the height of one whole tree is at which scale?
-A: **The organism scale.** The question concerns one individual living thing.
+<!-- card-id: 3441f8dd-d3dd-45e1-84a8-d2da0c467f9c -->
+Q: **Scale** is the size or level at which you ask a question. Three common
+biological scales are the **cell** (the smallest basic unit that living things
+are built from), the **organism** (one whole living thing), and the
+**population** (many living things of the same kind in one area). Your question
+is "how fast does this one rabbit hop?" Which scale is that question about, and
+why?
+A: The organism scale. The question is about one whole living thing — a single
+rabbit — not about its building units (cell scale) or about a group of rabbits
+(population scale).
 
-<!-- card-id: dfdf9acb-6447-4404-947d-746d8e747bec -->
-Q: What is the decisive difference between an organism-scale question and a population-scale question?
-A: **An organism-scale question concerns one individual; a population-scale question concerns a group of the same kind in one area.**
+<!-- card-id: 1aa1d97f-7833-4398-9d1b-28337a7d8f62 -->
+Q: A biologist asks, "in this forest, is the number of foxes going up or down
+over the years?" Is this an organism-scale question or a population-scale
+question, and what is the clue that decides it?
+A: A population-scale question. The clue is that it asks about the *number of
+foxes* — many living things of the same kind in one area — rather than about one
+individual fox.
 
-<!-- card-id: 4a2d9e2a-c4aa-4b07-9a25-bcae3a09dff3 -->
-Q: The panels show three possible scales. The icons are conceptual; their drawn sizes are not meant to be compared.
+<!-- card-id: 3976ba41-07bf-4bac-9eea-bff0b3e07b9f -->
+Q: Each panel pictures one scale; the drawn sizes are only symbols and are not
+meant to be compared. Panel 1 shows the inside of one basic building unit;
+panel 2 shows one whole living thing; panel 3 shows many living things of the
+same kind together. Your question is: "does this kind of beetle become more
+common across the field from spring to autumn?" Which panel matches the scale
+of your question?
 
-![Panel A shows one cell, Panel B one organism, and Panel C many same-kind organisms in one area; the icons are not to scale.](../figures/01_living_systems_and_scale/question_sets_scale.svg)
+![Three labeled panels: panel 1 shows one rounded building unit with specks inside, panel 2 shows one whole small creature, and panel 3 shows several creatures of the same kind together, with a note that drawn sizes are not to scale.](../figures/01_living_systems_and_scale/question_sets_scale.svg)
+A: Panel 3. Becoming "more common across the field" is about how many of that
+kind are present — a group, or population, scale. Panel 3 is the one showing
+many living things of the same kind together.
 
-To investigate why the number of one kind of plant in a field changed over five summers, which panel is the best starting scale?
-A: **Panel C, the population scale.** The question concerns a group's number in one area over time.
+<!-- card-id: 80a096d3-bc7b-4c29-a793-4e602831e61a -->
+Q: On one pond an observer writes down two notes. At the organism scale: "this
+single duck is paddling close to the reeds." At the population scale: "there are
+more ducks on the sheltered north side of the pond than on the open south side."
+Can both notes be correct at the same time, and how do they relate?
+A: Yes. Each describes the pond at a different scale: the organism-scale note is
+about one individual duck's action, while the population-scale note is about how
+the whole group is spread out. A statement about one individual and a statement
+about the group can both be true, because the group is made up of individuals.
 
-<!-- card-id: 0a59ee3a-396f-442f-8071-62227368b878 -->
-Q: A young plant becomes taller. One explanation describes the whole plant's change in height; another describes its cells becoming more numerous and some becoming larger. How can these explanations relate if both accurately describe what happens?
-A: **They can be complementary explanations at different scales.** Changes among cells can contribute to a change observed in the whole organism.
+## Variation among organisms
 
-<!-- card-id: 72b482da-be8f-4a33-8681-d97d51a970b7 -->
-Q: In biology, **variation** means differences among organisms in a population. Three young plants of the same kind differ in height. Why is one plant a risky stand-in for the whole population?
-A: **It may not represent the population's variation.** One individual shows one outcome, not the full range among individuals.
+<!-- card-id: b36d584e-896e-4a08-a407-7fdb9caaa209 -->
+Q: **Variation** means the differences among organisms in a population — they
+are not all identical. In a population of ladybugs, most have several spots but a
+few have none. Someone draws one spotted ladybug and labels it "the ladybug."
+What does variation tell us is wrong with treating that single drawing as the
+whole population?
+A: Because of variation the organisms differ, so one drawing cannot stand for
+every ladybug. The spotless ladybugs — and any other differences among
+individuals — are left out by a single "typical" picture.
 
-<!-- card-id: 9bacbae3-f03c-4a8e-a2ea-22991c1d8707 -->
-Q: Someone watches one snail move slowly for one minute and concludes, “All snails always move at that speed.” What is the main flaw in this reasoning?
-A: **It generalizes from one organism and one brief viewing while ignoring variation.**
+<!-- card-id: 068933b2-c953-4aad-b0a6-2d9c7c22f885 -->
+Q: A person watches one squirrel bury a single nut and concludes, "squirrels
+bury exactly one nut each." Using the idea of variation within a population,
+explain what is wrong with this conclusion.
+A: It overgeneralizes from a single organism to the whole population. Because of
+variation, other squirrels may bury different numbers of nuts, so watching one
+individual do something once cannot establish what all squirrels do.
 
-<!-- card-id: 34735e77-5c36-4e0b-bbfb-5a76aa257cdf -->
-Q: A **mechanism** is a process that produces an outcome. “The stem bends because it needs light” names a need but not a process. What question would instead ask for a mechanism?
-A: **“What process causes the stem to bend toward the light?”**
+## Mechanisms versus needs
 
-<!-- card-id: de7bc10e-2a38-4a90-a9c8-9e573975a263 -->
-Q: A young plant stem bends toward light from one side. Which is the mechanistic explanation, and what makes it mechanistic?
+<!-- card-id: 75b92345-fd0e-4afe-a95a-1550baae0880 -->
+Q: A **mechanism** is a step-by-step process that actually produces an outcome.
+Someone says, "a plant stem bends toward a window because the plant wants
+light." Rewrite this as a question that asks for a mechanism instead of treating
+a want as the cause.
+A: A mechanism question asks *how* the bending happens — for example, "what
+step-by-step process makes the stem bend toward the window?" It seeks the
+process that produces the bending rather than accepting a want as the
+explanation.
 
-1. The stem bends because it needs light.
-2. The two sides lengthen by different amounts, so the stem curves.
+<!-- card-id: 9c7eb6e0-ffe3-4039-a11c-1eca8a65e250 -->
+Q: Two explanations are offered for why a plant stem bends toward a window:
+(1) "the stem bends because the plant needs light to survive," and
+(2) "one side of the stem grows longer than the other, and the uneven
+lengthening tips the stem over toward the window."
+Which one is a mechanistic explanation, and what makes it mechanistic?
+A: Explanation (2). It names a step-by-step process — one side lengthening more
+than the other — that actually produces the bending. Explanation (1) gives only
+a need or purpose, not a process, so it is not mechanistic.
 
-A: **Explanation 2.** It describes a process that produces bending; “needs light” describes a possible benefit without supplying the steps that produce bending.
+## Observations, claims, and evidence
 
-<!-- card-id: 3e2e962c-eb2f-41be-8f97-d66667670f12 -->
-Q: An **observation** is something recorded, a **claim** is a statement about what is happening, and **evidence** is an observation used to judge a claim. A person records that a plant's leaves drooped after its soil dried, then says dry soil caused the drooping. Which part is the observation?
-A: **The recorded drooping after the soil dried.** “Dry soil caused it” is the claim being judged.
+<!-- card-id: 65bef786-43b4-4cb5-8e2e-dd9f54db35ce -->
+Q: Three terms: an **observation** is something you directly notice; a **claim**
+is a statement you assert might be true; **evidence** is observations used to
+support a claim. You see that a potted plant is drooping and that its soil is
+dry. Of these two statements, which is an observation and which is a claim:
+"the plant is drooping" / "the plant is drooping because no one watered it"?
+A: "The plant is drooping" is an observation — something directly noticed. "The
+plant is drooping because no one watered it" is a claim, because it asserts
+something (a reason) that goes beyond what was directly seen.
 
-<!-- card-id: f68939a7-0271-43ef-a90f-7d534e01f076 -->
-Q: Evidence from one plant shows that its leaves drooped after its soil dried. How strongly does that support the claim that dry soil was the only possible cause?
-A: **It is consistent with dry soil contributing, but it does not establish that dry soil was the only cause.** One sequence does not rule out other explanations.
+<!-- card-id: 009b7acf-6540-480b-b3b4-f486231d329a -->
+Q: You directly noticed two things: a potted plant is drooping, and its soil is
+dry. Someone makes the claim, "the dry soil is what made the plant droop." Do
+your two observations *prove* this claim, or only *fit with* it? Explain.
+A: They only fit with it. The two observations are consistent with the claim,
+but they do not prove that the dry soil is the cause: the drooping could have
+another cause, and noticing two things together is not the same as showing that
+one produced the other.
 
-<!-- card-id: cd5fd20b-b91f-4954-8fb8-ab20c9677dd9 -->
-Q: A **model** is a purposeful simplification used to represent or reason about something. Details it leaves out are limitations, not automatically errors. Why can the boundary diagram still be useful even though it omits exact shapes and timing?
-A: **Those details are not needed for its purpose: comparing which components and interactions each boundary includes.** A model's omissions matter when they interfere with the question it is used to answer.
+## Models and their limits
 
-<!-- card-id: a708434b-757d-4029-932d-a78aaa263b77 -->
-Q: Two models address why a plant wilted in a hot, dry setting. Model X shows detailed leaf shapes but excludes soil and air. Model Y uses a plain plant symbol but includes interactions with soil and nearby air. Which model is more useful for this question, and why?
-A: **Model Y.** It represents the relationships relevant to the question; visual detail alone does not compensate for omitting possible contributors. It guides what to investigate rather than proving a cause.
+<!-- card-id: 17229835-be0b-4150-bee8-92a117bfe7ca -->
+Q: A **model** is a purposeful simplification — a stand-in that keeps the details
+useful for a question and leaves other details out. A left-out detail is a
+**limitation** of the model. You draw a simple map of a park that shows only the
+paths, to help a visitor walk from the gate to the pond. Is leaving the park's
+benches off this map a meaningful limitation for that purpose? Explain.
+A: No — for the purpose of walking from the gate to the pond, leaving off the
+benches is not a meaningful limitation, because the paths are what the walker
+needs. An omission is a meaningful limitation only when the left-out detail is
+one the question actually depends on.
+
+<!-- card-id: 79ac234c-3685-4094-b524-00e44b38603f -->
+Q: You want to explain to a friend why a potted plant wilted, focusing on how
+the plant, the soil, and the air interacted that afternoon. Two models are
+available: (1) a single drawing of the plant by itself, and (2) a diagram
+showing the plant, the soil, and the air as components with arrows for how they
+interacted. Which model fits your purpose better, and why?
+A: Model (2). Your purpose is to show how the plant, the soil, and the air
+interacted, so a model that includes those three components and their
+interactions fits the question. Model (1) shows only the plant and leaves out
+the components and interactions your explanation depends on.

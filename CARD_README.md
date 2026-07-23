@@ -44,11 +44,11 @@ not grant knowledge until their chapter frontmatter declares an edge.
 | `system`, `component`, `interaction` | C04–C07, C18–C19 | C03 front: a chosen set of parts and the ways they affect one another | C03 | C04–C07, C18–C19 | established |
 | `system boundary` and dashed-outline grammar | C05–C07, C19 | C04 front defines the boundary; C06 front explains that dashed outlines show two candidate boundaries | C04 | C05–C07, C19 | established |
 | `scale` | C08–C11 | C08 front: the size or level at which a question is asked | C08 | C09–C11 | established |
-| `cell` | C08, C10–C11 | C08 front: the smallest basic unit of life | C08 | C10–C11 | established |
-| `population` | C08–C10, C12–C13 | C08 front: organisms of the same kind in the same area | C09 | C10, C12–C13 | established |
+| `cell` | C08, C10 | C08 front: the smallest basic unit of life | C08 | C10 | established |
+| `population` | C08–C13 | C08 front: organisms of the same kind in the same area | C09 | C10–C13 | established |
 | `wilt` | C06, C19 | C06 front: lose firmness and droop | C06 | C19 | established |
 | three-panel scale diagram | C10 | C10 front names each panel and states that icons are conceptual and not to scale | C10 | none in pilot | established |
-| cross-scale explanation | C11 | C08–C10 establish scales; C11 front supplies two explanations at named scales | C11 | later chapters | established |
+| cross-scale statements | C11 | C08–C10 establish scales; C11 front supplies two pond notes each labelled with its named scale (organism, population) | C11 | later chapters | established |
 | `variation` | C12–C13 | C12 front: differences among organisms in a population | C12 | C13 | established |
 | `mechanism`, `mechanistic explanation` | C14–C15 | C14 front: a process that produces an outcome | C14 | C15 | established |
 | observation, claim, evidence | C16–C17 | C16 front defines each and supplies a worked everyday biological example | C16 | C17 | established |
